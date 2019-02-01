@@ -9,6 +9,8 @@ import {ButtonModule} from 'primeng/button';
 
 import {TableModule} from 'primeng/table';
 
+import {PaginatorModule} from 'primeng/paginator';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import {TableModule} from 'primeng/table';
     AppRoutingModule,
     InputTextModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

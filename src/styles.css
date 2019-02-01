@@ -10,7 +10,7 @@ label{
   font-weight: bold;
 }
 
-@media (min-width: 575.98px) { 
+@media (min-width: 575.98px) {
   .container{
     width: 555px;
     margin: 0 auto;
@@ -25,16 +25,26 @@ label{
   }
  }
 
-@media (min-width: 991.98px) { 
+@media (min-width: 991.98px) {
   .container{
     width: 960px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1199.98px) { 
+@media (min-width: 1199.98px) {
   .container{
     width: 1170px;
     margin: 0 auto;
   }
  }
+
+.col-acoes{
+  width: 20px;
+  text-align: center;
+}
+
+.col-valor{
+  width: 100px;
+  text-align: center;
+}
