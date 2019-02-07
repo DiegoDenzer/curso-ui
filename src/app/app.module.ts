@@ -6,15 +6,19 @@ import { AppComponent } from './app.component';
 
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
-
+import {TooltipModule} from 'primeng/tooltip'
 import {TableModule} from 'primeng/table';
 
 import {PaginatorModule} from 'primeng/paginator';
 import { from } from 'rxjs';
+import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LancamentosPesquisaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,8 @@ import { from } from 'rxjs';
     InputTextModule,
     ButtonModule,
     TableModule,
-    PaginatorModule
+    PaginatorModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
