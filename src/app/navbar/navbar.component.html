@@ -1,9 +1,18 @@
 <nav class="navbar">
   <div class="container">
    
-    <a href="#" class="navbar-toggle">
+    <a href="javascript:;" class="navbar-toggle" (click)="exibeMenu = !exibeMenu">
       <i class="pi pi-bars" style="font-size: 3em"></i>
     </a>
-   
+    
+
+    <ul class="navbar-menu" [hidden]="!exibeMenu">
+      <li class="navbar-usuario">diego denzer</li>
+      <li class="navbar-menuitem"><a href="#">Lançamentos</a></li>
+      <li class="navbar-menuitem"><a href="#">Pessoas</a></li>
+      <li class="navbar-menuitem"><a href="#">Logout</a></li>
+    </ul>
+
   </div>
 </nav>
+
