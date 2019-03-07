@@ -13,12 +13,16 @@ import {PaginatorModule} from 'primeng/paginator';
 import { from } from 'rxjs';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PessoaPesquisaComponent } from './pessoa-pesquisa/pessoa-pesquisa.component';
+import { MudandoCampoDirective } from './mudando-campo.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentosPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    PessoaPesquisaComponent,
+    MudandoCampoDirective
   ],
   imports: [
     BrowserModule,
