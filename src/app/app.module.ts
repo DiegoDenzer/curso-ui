@@ -16,6 +16,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PessoaPesquisaComponent } from './pessoa-pesquisa/pessoa-pesquisa.component';
 import { MudandoCampoDirective } from './mudando-campo.directive';
 
+import { CurrencyMaskModule } from "ng2-currency-mask";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,8 @@ import { MudandoCampoDirective } from './mudando-campo.directive';
     ButtonModule,
     TableModule,
     PaginatorModule,
-    TooltipModule
+    TooltipModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

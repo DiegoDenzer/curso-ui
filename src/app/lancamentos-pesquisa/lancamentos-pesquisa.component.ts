@@ -11,16 +11,16 @@ export class LancamentosPesquisaComponent  {
     {
       descricao: 'Pagamento',
       pessoa: 'Diego',
-      pagamento: '10/09/2019',
-      vencimento: '10/10/2019',
+      pagamento: new Date(2019, 2, 10),
+      vencimento: new Date(2019, 2, 10),
       valor: 100.50,
       tipo: 'DESPESA'
     },
     {
       descricao: 'Bonus',
       pessoa: 'Denzer',
-      pagamento: '12/10/2029',
-      vencimento: '10/10/2020',
+      pagamento: new Date(2029, 12,1),
+      vencimento: new Date(2029, 12,1),
       valor: 1000,
       tipo: 'RECEITA'
     }

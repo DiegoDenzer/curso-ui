@@ -48,15 +48,15 @@
             </td>
             <td> 
               <span class="ui-column-title">Pagamento</span>
-              {{lancamento.pagamento}}
+              {{lancamento.pagamento | date:"dd/MM/yyyy" }}
             </td>
             <td>
               <span class="ui-column-title">Vencimento</span>
-              {{lancamento.vencimento}}
+              {{lancamento.vencimento | date:"dd/MM/yyyy"}}
             </td>
             <td class="col-valor" [style.color]="lancamento.tipo === 'DESPESA' ? 'red': 'blue'">
               <span class="ui-column-title">Valor</span>
-              {{lancamento.valor}}
+              {{lancamento.valor  | currency:'BRL' }}
             </td>
             <td class="col-acoes">
               <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top" style="margin-right: 4px"></a>
